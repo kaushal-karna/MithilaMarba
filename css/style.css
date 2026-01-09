@@ -225,6 +225,12 @@ input[type="checkbox"] {
     align-self: center;
     gap: 8px;
     left: 342px;
+    cursor: pointer;
+  }
+
+  .text-right a{
+    text-decoration: none;
+    color: #333;
   }
 
   /* footer  */
