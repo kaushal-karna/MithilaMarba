@@ -1,0 +1,222 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: blueviolet;
+}
+
+/* header section */
+
+/* Navbar  */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  padding: 1rem 1.5rem;
+  width: 1272px;
+  height: 60px;
+}
+
+.brand-name {
+  color: white;
+  text-decoration: none;
+  font-size: 1.5rem;
+  margin-left: -12px;
+}
+
+/* Menu Styling (Hidden by default) */
+.nav-menu {
+  list-style-type: none;
+  display: flex;
+  list-style-type: none;
+  display: flex;
+  width: 300px;
+  justify-content: space-between;
+}
+
+.nav-menu li a {
+  color: white;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  display: block;
+}
+
+/* Hamburger Icon Styling */
+.hamburger-icon {
+  display: none;
+  cursor: pointer;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 24px;
+  width: 30px;
+}
+
+.bar {
+  display: block;
+  width: 100%;
+  height: 3px;
+  background-color: white;
+  /* Optional: adds animation for icon transformation */
+  transition: 0.4s;
+}
+
+/* Hide the actual checkbox input */
+input[type="checkbox"] {
+  display: none;
+}
+
+/* The core "Checkbox Hack" using the general sibling combinator (~)  */
+/* When the checkbox is checked, select the sibling nav-menu and apply styles */
+#menu-toggle:checked ~ .nav-menu {
+  /* Styles to show the menu go here for mobile */
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 4.5rem;
+  right: 0;
+  background-color: #333;
+}
+
+/* SEARCH CONTAINER */
+.search-container {
+  position: relative;
+}
+
+/* SEARCH BUTTON */
+.search-button {
+  cursor: pointer;
+  position: absolute;
+  top: -15px;
+  left: 237px;
+}
+
+/* SEARCH INPUT */
+.search-input {
+  display: none;
+  position: absolute;
+  top: 50%;
+  right: -215px;
+  transform: translateY(-50%);
+  width: 325px;
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* TOGGLE SEARCH */
+#toggle-search:checked ~ .search-input {
+  display: block;
+}
+
+
+/* footer section */
+
+
+
+/* Media Query for responsiveness  */
+
+@media (max-width: 768px) {
+  .nav-menu {
+    /* Hide the menu by default on small screens */
+    display: none;
+  }
+
+  .hamburger-icon {
+    /* Show the hamburger icon on small screen */
+    display: flex;
+  }
+}
+
+@media (max-width: 450px) {
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: #333; */
+    padding: 2rem 1.5rem;
+    /* margin-top: 10px; */
+    width: 440px;
+    height: 60px;
+  }
+
+  .logo {
+    position: absolute;
+    left: 28px;
+    top: 3px;
+    /* margin-top: 10px; */
+  }
+  /* Navbar  */
+  .nav-menu {
+    /* Hide the menu by default on small screens */
+    display: none;
+    left: 335px;
+    width: 100px;
+  }
+
+  /* Hamburger  */
+
+  .hamburger-icon {
+    display: flex;
+    position: absolute;
+    right: -15px;
+  }
+  /* Search container */
+  .search-container {
+    position: absolute;
+    right: 56px;
+    top: 5%;
+    /* margin-top: 10px; */
+    transform: translateY(-46%);
+  }
+
+  .search-button {
+    /* Stop desktop positioning */
+    position: static;
+  }
+  .search-input {
+    width: 145px;
+    right: 40px;
+    top: 50%;
+    transform: translateY(-56%);
+  }
+
+  /* Header closed */
+    /* main  start*/
+  /* first-section */
+  main {
+    width: 440px;
+    height: 1188px;
+  }
+
+  .hero-sec {
+    width: 404px;
+    height: 237px;
+    background-color: pink;
+    position: absolute;
+    left: 18px;
+    top: 330px;
+  }
+
+  .banner {
+    width: 440px;
+    height: 209px;
+    background-color: #dddddd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+  }
+/* footer  */
+
+.footer{
+  width: 100%;
+  height: 60px;
+  background-color: #333;
+  color: azure;
+}
+
+}

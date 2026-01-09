@@ -1,0 +1,68 @@
+<!-- {% load static %} -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mithila Marba</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+
+            <div class="logo">
+                <a href="#" class="brand-name"><img src="logo.svg" alt=""></a>
+            </div>
+            <div class="search-container">
+                <!-- The hidden checkbox -->
+                <input type="checkbox" id="toggle-search" aria-label="Toggle search input">
+
+                <!-- The label acts as the clickable button/icon -->
+                <label for="toggle-search" class="search-button">
+                    <img src="search.svg" alt="">
+                    <!-- You can use text or a search icon here, e.g., a magnifying glass Unicode character -->
+                </label>
+
+                <!-- The search input, which will be toggled -->
+                <input type="text" class="search-input" placeholder="Search...">
+            </div>
+
+
+            <!-- Checkbox input is hidden visually but handles the toggle state -->
+            <input type="checkbox" id="menu-toggle">
+            <!-- Label acts as the hamburger icon, linked to the checkbox via the 'for' attribute -->
+            <label for="menu-toggle" class="hamburger-icon">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </label>
+            <!-- The actual menu list -->
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+<section class="first-section">
+    <div class="banner">
+        <img src="logo.svg" alt="">
+    </div>
+</section>
+<section class="hero-sec">
+
+</section>
+    </main>
+    <footer>
+        <div class="footer">
+            <p>&copy; 2025 Kaushal Karn. All rights reserved. Made with &hearts; by K.karna</p>
+        </div>
+    </footer>
+</body>
+
+</html>
