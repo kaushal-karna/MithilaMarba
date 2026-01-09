@@ -112,10 +112,7 @@ input[type="checkbox"] {
   display: block;
 }
 
-
 /* footer section */
-
-
 
 /* Media Query for responsiveness  */
 
@@ -185,7 +182,7 @@ input[type="checkbox"] {
   }
 
   /* Header closed */
-    /* main  start*/
+  /* main  start*/
   /* first-section */
   main {
     width: 440px;
@@ -195,7 +192,7 @@ input[type="checkbox"] {
   .hero-sec {
     width: 404px;
     height: 237px;
-    background-color: pink;
+    /* background-color: pink; */
     position: absolute;
     left: 18px;
     top: 330px;
@@ -204,19 +201,40 @@ input[type="checkbox"] {
   .banner {
     width: 440px;
     height: 209px;
-    background-color: #dddddd;
+    /* background-color: #dddddd; */
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 1.5rem;
   }
-/* footer  */
 
-.footer{
-  width: 100%;
-  height: 60px;
-  background-color: #333;
-  color: azure;
-}
+   /* Hero text-content */
+  .hero-text {
+    display: flex;
+    /* justify-content: center; */
+    /* align-items: center; */
+  }
+
+  .text-right {
+    display: flex;
+    position: absolute;
+    width: 67px;
+    align-self: center;
+    gap: 8px;
+    left: 342px;
+  }
+
+  /* footer  */
+
+  .footer {
+    width: 117%;
+    height: 60px;
+    background-color: #333;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.9rem;
+  }
 
 }
