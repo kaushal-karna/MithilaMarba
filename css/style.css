@@ -159,13 +159,13 @@ input[type="checkbox"] {
   .hamburger-icon {
     display: flex;
     position: absolute;
-    right: -70px;
+    right: -105px;
     top: 1.8%;
   }
   /* Search container */
   .search-container {
     position: absolute;
-    right: -15px;
+    right: -50px;
     top: 3%;
     /* margin-top: 10px; */
     transform: translateY(-46%);
@@ -176,7 +176,7 @@ input[type="checkbox"] {
     position: static;
   }
   .search-input {
-    width: 225px;
+    width: 220px;
     right: 40px;
     padding-top: 20px;
     padding-bottom: 20px;
