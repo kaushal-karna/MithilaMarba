@@ -269,11 +269,35 @@ input[type="checkbox"] {
   /* Third section  */
   .select-criteria {
     position: absolute;
-    background-color: aquamarine;
+    background-color: white;
     width: 445px;
     height: 315px;
     left: 20px;
     top: 616px;
+  }
+
+  .text-content {
+    position: absolute;
+    width: 297px;
+    height: 16px;
+    left: calc(50% - 297px / 2 + 0.5px);
+    top: 7px;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 700;
+    /* font-size: 13.5px; */
+    line-height: 16px;
+
+    color: #000000;
+  }
+  .first-text {
+    font-size: 0.5rem;
+  }
+  .second-text {
+    position: absolute;
+    text-align: center;
+    left: 5px;
+    font-size: 0.5rem;
   }
 
   /* footer  */
