@@ -1,4 +1,5 @@
 console.log("Script is loading...");
+console.log("Hello, My name is kaushal karn and i am projecting my work here see my creations....")
 const menuToggle = document.getElementById("menu-toggle");
 const hamburger = document.querySelector('label[for="menu-toggle"]');
 const navMenu = document.querySelector(".nav-menu");
