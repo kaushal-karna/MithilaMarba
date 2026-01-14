@@ -110,8 +110,7 @@ function goToProduct(name) {
   // window.location.href = `/search.html?q=${encodeURIComponent(name)}`;
 }
 
-
-// Whatsapp redirect Script 
+// Whatsapp redirect Script
 document.getElementById("submitDetails").addEventListener("click", function () {
   const role = document.getElementById("role").value;
   const cast = document.getElementById("cast").value;
@@ -119,13 +118,59 @@ document.getElementById("submitDetails").addEventListener("click", function () {
     alert("Please select Bride/Groom and cast")
     return;
   }
-   
+
   // 🔴 ADMIN WHATSAPP NUMBER (with country code)
   const adminNumber = "9779814325635";
   const message = `New Mithila Marba Request 🧾
   Role: ${role.toUpperCase()}
-  Cast: ${cast.toUpperCase()} 
+  Cast: ${cast.toUpperCase()}
   `;
   const whatsappURL = "https://wa.me/" + adminNumber + "?text=" + encodeURIComponent(message);
   window.location.href = whatsappURL;
 })
+
+// Caste -> Product mapping demo (for admin)
+// const productMapping = {
+//   Groom: {
+//     Kayastha: ["Kurta", "Paijama", "Paag"],
+//     Brahman: ["Sherwani", "Churidar", "Pagdi"],
+//     Yadav: ["Kurta", "Dhoti", "Topi"],
+//   },
+//   Bride: {
+//     Kayastha: ["Sari", "Lehanga", "Sindoor"],
+//     Brahman: ["Saree", "Ghunghat", "Chooda"],
+//     Yadav: ["Sari", "Orna", "Sindoor"],
+//   },
+// };
+
+// document.getElementById("submitDetails").addEventListener("click", function () {
+//   const role = document.getElementById("role").value;
+//   const cast = document.getElementById("cast").value;
+
+//   if (!role || !cast) {
+//     alert("Please select Bride/Groom and caste");
+//     return;
+//   }
+
+//   // 🔴 ADMIN WHATSAPP NUMBER (with country code)
+//   const adminNumber = "9779814325635";
+
+//   // Get suggested products from mapping
+//   // Function to capitalize first letter (Kayastha instead of kayastha)
+//   function capitalizeFirst(str) {
+//     return str.charAt(0).toUpperCase() + str.slice(1).toLowerCase();
+//   }
+
+//   const products = productMapping[capitalizeFirst(role)][capitalizeFirst(cast)] || [];
+//   const productList = products.join(", ");
+
+//   const message = `New Mithila Marba Request 🧾
+// Role: ${role.toUpperCase()}
+// Cast: ${cast.toUpperCase()}
+// Suggested Products: ${productList}
+//       `;
+
+//   const whatsappURL =
+//     "https://wa.me/" + adminNumber + "?text=" + encodeURIComponent(message);
+//   window.location.href = whatsappURL;
+// });
