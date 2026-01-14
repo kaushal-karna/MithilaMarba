@@ -184,22 +184,25 @@ input[type="checkbox"] {
   width: 100%;
   max-width: 100%;
   margin: auto;
+  overflow: hidden;
 }
 
 .card {
   display: flex;
   gap: 10px;
-  overflow-x: hidden; /* hide extra content */
-  scroll-snap-type: x mandatory;
-  scroll-behavior: smooth;
+  /* Auto-scroll animations  */
+  animation: scrollLeft 15s linear infinite;
 }
 
 .card > div {
   min-width: 115px;
   height: 200px;
   background: #d9d9d9;
-  scroll-snap-align: start;
   flex-shrink: 0;
+} 
+
+.card:hover{
+ animation-play-state: paused;
 }
 
 /* Hide scrollbar */
@@ -421,21 +424,15 @@ input[type="checkbox"] {
   }
 }
 
-#product-1{
-  background-color: green;
+
+@keyframes scrollLeft{
+ 0%{
+  transform: translateX(0);
+ }
+ 100% {
+  transform: translateX(-100%);  /* scroll half width (original + cloned cards) */
+ }
 }
-#product-2{
-  background-color: brown;
-}
-#product-3{
-  background-color: pink;
-}
-#product-1-clone{
-  background-color: blue;
-}
-#product-2-clone{
-  background-color: black;
-}
-#product-3-clone{
-  background-color: grey;
-}
+
+
+
