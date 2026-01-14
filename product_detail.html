@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Detail view</title>
+    <link rel="stylesheet" href="css/product_detail.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="backward">
+                <a href="index.html"><img src="backward.svg" alt=""></a>
+
+            </div>
+            <h2>Mithila Paag</h2>
+
+
+            <!-- Checkbox input is hidden visually but handles the toggle state -->
+            <input type="checkbox" id="menu-toggle">
+            <!-- Label acts as the hamburger icon, linked to the checkbox via the 'for' attribute -->
+            <label for="menu-toggle" class="hamburger-icon">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </label>
+            <!-- The actual menu list -->
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Here is the detailed view of product📱📱❤️❤️</h1>
+        <div class="product-card">
+            <img src="paag.jpg" alt="Product Image">
+
+            <!-- 👇 NEW PRODUCT INFO SECTION -->
+            <div class="product-info">
+                <h2 class="product-name">Mithila Paag</h2>
+
+                <div class="price">
+                    <span class="old-price">INR 1601/-</span>
+                    <span class="new-price">INR 1001/-</span>
+                </div>
+
+                <div class="action-buttons">
+                    <button class="buy-btn">Buy Now</button>
+                    <button class="cart-btn">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- 👇 DESCRIPTION REMAINS SAME -->
+        <div class="description">
+            <p>
+               The Mithila Paag is a traditional headgear from the Mithila region of Bihar, India, and parts of Nepal, serving as a powerful symbol of honor, respect, and cultural identity. Historically dating back to prehistoric times when it was made of plant leaves, the modern Paag is typically crafted from cotton, silk, or satin. Its colors carry deep ceremonial significance: red is worn by grooms and during sacred rituals, mustard (yellow) is for wedding guests, and white is traditionally donned by elders. Recognizing its heritage, the Indian government issued a commemorative postage stamp featuring the Paag in 2017. 
+            </p>
+        </div>
+
+
+    </main>
+    <footer>
+        <div class="footer">
+            <p>&copy; 2026 Mithila Marba. All rights reserved. Made with &hearts; by K.karna</p>
+        </div>
+    </footer>
+
+    <script src="js/product_detail.js"></script>
+</body>
+
+</html>

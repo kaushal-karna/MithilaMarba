@@ -1,0 +1,205 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: blueviolet;
+  overflow-x: hidden; /* ✅ ADD HERE */
+}
+/* Navbar  */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  padding: 1rem 1.5rem;
+  width: 100%;
+  /* max-width: 1200px; */
+  height: 60px;
+}
+
+/* Menu Styling (Hidden by default) */
+.nav-menu {
+  list-style-type: none;
+  display: flex;
+  list-style-type: none;
+  display: flex;
+  width: 300px;
+  justify-content: space-between;
+}
+
+.nav-menu li a {
+  color: white;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  display: block;
+}
+
+/* Hamburger Icon Styling */
+.hamburger-icon {
+  display: none;
+  cursor: pointer;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 24px;
+  width: 30px;
+}
+
+.bar {
+  display: block;
+  width: 100%;
+  height: 3px;
+  background-color: white;
+  /* Optional: adds animation for icon transformation */
+  transition: 0.4s;
+}
+
+/* Hide the actual checkbox input */
+input[type="checkbox"] {
+  display: none;
+}
+
+/* The core "Checkbox Hack" using the general sibling combinator (~)  */
+/* When the checkbox is checked, select the sibling nav-menu and apply styles */
+#menu-toggle:checked ~ .nav-menu {
+  /* Styles to show the menu go here for mobile */
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 4.5rem;
+  right: 0;
+  background-color: #333;
+}
+
+h2 {
+  color: white;
+}
+
+.backward {
+  cursor: pointer;
+}
+
+/* Media Query for responsiveness  */
+
+@media (max-width: 768px) {
+  main {
+    max-width: 900px;
+    margin: auto;
+  }
+  .nav-menu {
+    /* Hide the menu by default on small screens */
+    display: none;
+  }
+
+  .hamburger-icon {
+    /* Show the hamburger icon on small screen */
+    display: flex;
+  }
+}
+
+@media (min-width: 360px) and (max-width: 460px) {
+  .navbar,
+  main,
+  .footer {
+    width: 100%;
+  }
+  /* MAIN CONTENT  */
+  main {
+    padding: 1rem;
+  }
+  /* PRODUCT CARD  */
+  .product-card {
+    background: #4b2c7a;
+    padding: 16px;
+  }
+
+  .product-card img {
+    width: 100%;
+    border-radius: 6px;
+    margin-bottom: 12px;
+  }
+
+  .product-info {
+    color: #fff;
+  }
+
+  .product-name {
+    font-size: 20px;
+    margin-bottom: 6px;
+  }
+
+  .price {
+    margin-bottom: 12px;
+  }
+
+  .old-price {
+    text-decoration: line-through;
+    color: #ccc;
+    margin-right: 8px;
+  }
+
+  .new-price {
+    font-size: 18px;
+    font-weight: 600;
+  }
+
+  .action-buttons {
+    display: flex;
+    gap: 12px;
+  }
+
+  .buy-btn,
+  .cart-btn {
+    background: #f7941d;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 6px;
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+  }
+
+  .buy-btn:hover {
+    background: #b86b0e;
+  }
+  .cart-btn:hover {
+    background: #b86b0e;
+  }
+
+  .description {
+    background: #4b2c7a;
+    color: #fff;
+    padding: 16px;
+    margin-top: 10px;
+  }
+
+  h1 {
+    font-size: 1.2rem;
+    text-align: center;
+    margin: 1rem 0;
+  }
+
+  h2 {
+    font-size: 1rem;
+  }
+
+  .navbar {
+    padding: 0.8rem 1rem;
+  }
+
+  .nav-menu {
+    width: 110px;
+  }
+  /* footer  */
+  .footer {
+    height: 40px;
+    background-color: #333;
+    color: white;
+    font-size: 0.6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
