@@ -121,10 +121,11 @@ document.getElementById("submitDetails").addEventListener("click", function () {
   }
    
   // 🔴 ADMIN WHATSAPP NUMBER (with country code)
-  const adminNumber = "+9779814325635";
+  const adminNumber = "9779814325635";
   const message = `New Mithila Marba Request 🧾
   Role: ${role.toUpperCase()}
-  Cast: ${cast.toUppercase()} `;
-  const whatsappURL = "https://wa.me" + adminNumber + "?text=" + encodeURIComponent(message);
+  Cast: ${cast.toUpperCase()} 
+  `;
+  const whatsappURL = "https://wa.me/" + adminNumber + "?text=" + encodeURIComponent(message);
   window.location.href = whatsappURL;
 })
