@@ -157,7 +157,7 @@ input[type="checkbox"] {
     background: white;
     width: 90%;
     max-width: 400px;
-    margin-left: 50px;
+    margin-left: 35px;
     display: flex;
     align-items: center;
     gap: 0.5rem;
