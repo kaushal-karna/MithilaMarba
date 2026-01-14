@@ -109,3 +109,22 @@ function goToProduct(name) {
   // Later you can redirect:
   // window.location.href = `/search.html?q=${encodeURIComponent(name)}`;
 }
+
+
+// Whatsapp redirect Script 
+document.getElementById("submitDetails").addEventListener("click", function () {
+  const role = document.getElementById("role").value;
+  const cast = document.getElementById("cast").value;
+  if (!role || !cast) {
+    alert("Please select Bride/Groom and cast")
+    return;
+  }
+   
+  // 🔴 ADMIN WHATSAPP NUMBER (with country code)
+  const adminNumber = "+9779814325635";
+  const message = `New Mithila Marba Request 🧾
+  Role: ${role.toUpperCase()}
+  Cast: ${cast.toUppercase()} `;
+  const whatsappURL = "https://wa.me" + adminNumber + "?text=" + encodeURIComponent(message);
+  window.location.href = whatsappURL;
+})
