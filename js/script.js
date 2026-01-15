@@ -121,7 +121,7 @@ document.getElementById("submitDetails").addEventListener("click", function () {
 
   // 🔴 ADMIN WHATSAPP NUMBER (with country code)
   const adminNumber = "9779814325635";
-  const message = `New Mithila Marba Request 🧾
+  const message = `New Mithila Marba Request 
   Role: ${role.toUpperCase()}
   Cast: ${cast.toUpperCase()}
   `;
